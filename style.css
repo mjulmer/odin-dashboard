@@ -4,6 +4,7 @@ body {
   height: 100vh;
   grid-template-columns: clamp(100px, 20vw, 300px) 1fr;
   grid-template-rows: 100px 200px 1fr;
+  font-family: sans-serif;
 }
 
 .top-nav {
@@ -14,16 +15,55 @@ body {
 .top-greeter {
   grid-row: 2;
   grid-column: 2;
-  background-color: aquamarine;
+  background-color: white;
 }
 
 .sidebar {
   grid-row: 1 / -1;
-  background-color: rgb(15, 167, 255);
+  background-color: rgb(14, 147, 224);
+  color: white;
+}
+
+.sidebar .logo {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.sidebar .logo img{
+    width: 50px;
+}
+
+.sidebar .logo span{
+   font-size: larger;
+   font-weight: bold;
+}
+
+.sidebar-links {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+}
+
+.sidebar li img {
+    width: 20px;
+}
+
+.sidebar ul {
+    padding: 1.5rem;
+}
+
+.sidebar li {
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
 }
 
 .content {
   grid-row: 3;
   grid-column: 2;
-  background-color: rgb(121, 121, 121);
+  background-color: rgb(218, 223, 238);
 }
