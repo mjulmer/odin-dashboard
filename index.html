@@ -1,53 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Dashboard</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="sidebar">
-        <div class="logo">
-            <img src="icons/star-three-points.svg" aria-hidden="true">
-            <span aria-hidden="true">Dashboard</span></div>
-        <ul class="main-links sidebar-links">
-            <li><img src="icons/home.svg" aria-hidden="true"></li>
-            <li>Home</li>
-            <li><img src="icons/card-account-details-outline.svg" aria-hidden="true"></li>
-            <li>Profile</li>
-            <li><img src="icons/message-reply.svg"aria-hidden="true"></li>
-            <li>Messages</li>
-            <li><img src="icons/clock.svg" aria-hidden="true"></li>
-            <li>History</li>
-            <li><img src="icons/note-multiple.svg" aria-hidden="true"></li>
-            <li>Tasks</li>
-            <li><img src="icons/account-group.svg" aria-hidden="true"></li>
-            <li>Communities</li>
-        </ul>
-        <ul class="secondary-links sidebar-links">
-            <li><img src="icons/cog.svg" aria-hidden="true"></li>
-            <li>Settings</li>
-            <li><img src="icons/help-box.svg" aria-hidden="true"></li>
-            <li>Support</li>
-            <li><img src="icons/shield-check.svg" aria-hidden="true"></li>
-            <li>Privacy</li>    
-        </ul>
+      <div class="logo">
+        <img src="icons/star-three-points.svg" aria-hidden="true" />
+        <span aria-hidden="true">Dashboard</span>
+      </div>
+      <ul class="main-links sidebar-links">
+        <li><img class="icon" src="icons/home.svg" aria-hidden="true" /></li>
+        <li>Home</li>
+        <li>
+          <img
+            class="icon"
+            src="icons/card-account-details-outline.svg"
+            aria-hidden="true"
+          />
+        </li>
+        <li>Profile</li>
+        <li>
+          <img class="icon" src="icons/message-reply.svg" aria-hidden="true" />
+        </li>
+        <li>Messages</li>
+        <li><img class="icon" src="icons/clock.svg" aria-hidden="true" /></li>
+        <li>History</li>
+        <li>
+          <img class="icon" src="icons/note-multiple.svg" aria-hidden="true" />
+        </li>
+        <li>Tasks</li>
+        <li>
+          <img class="icon" src="icons/account-group.svg" aria-hidden="true" />
+        </li>
+        <li>Communities</li>
+      </ul>
+      <ul class="secondary-links sidebar-links">
+        <li><img class="icon" src="icons/cog.svg" aria-hidden="true" /></li>
+        <li>Settings</li>
+        <li>
+          <img class="icon" src="icons/help-box.svg" aria-hidden="true" />
+        </li>
+        <li>Support</li>
+        <li>
+          <img class="icon" src="icons/shield-check.svg" aria-hidden="true" />
+        </li>
+        <li>Privacy</li>
+      </ul>
     </div>
-    <div class="top-nav">Search
+    <div class="top-nav">
+      <div class="search-and-nav">
         <form role="search">
-            <img src="" alt="Seach icon">
-            <input type="search" name="query" aria-label="Search">
-          </form>
-    </div>
-    <div class="top-greeter">
-        <div class="account-greeter">
-            <img src="" alt="Avatar of signed-in user">
-            <p id="static-greeting">Hi there,</p>
-            <p id="personalized-greeting">Firstname Lastname (username)</p>
-        </div>
+          <img class="icon" src="icons/magnify.svg" aria-hidden="true" />
+          <input type="search" name="query" aria-label="Search" />
+        </form>
+      </div>
+
+      <div class="nav-end-content">
+        <img
+          class="icon"
+          src="icons/bell-ring-outline.svg"
+          alt="Notifications"
+        />
+        <img class="avatar" src="icons/amethyst.png" aria-hidden="true" />
+        <span>Firstname Lastname</span>
+      </div>
+
+      <div class="account-greeter">
+        <img
+          class="avatar"
+          src="icons/amethyst.png"
+          alt="Avatar of signed-in user"
+        />
+        <p id="static-greeting">Hi there,</p>
+        <p id="personalized-greeting">Firstname Lastname (username)</p>
+      </div>
+      <div>
         <button>New</button><button>Upload</button><button>Share</button>
+      </div>
     </div>
     <div class="content">Projects</div>
-</body>
+  </body>
 </html>
