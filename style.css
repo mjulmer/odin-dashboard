@@ -146,4 +146,47 @@ body {
   grid-row: 2;
   grid-column: 2;
   background-color: var(--light-grey-background);
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-rows: 1fr 1fr;
+  padding: 1rem 2rem 2rem;
+}
+
+.section-header {
+  font-weight: bold;
+}
+
+#projects {
+  grid-row: 1 / -1;
+}
+
+#trending-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.trending-person {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem;
+}
+
+.trending-person .avatar {
+  width: 50px;
+  grid-row: 1 / -1;
+}
+
+.trending-person p {
+  margin: .25rem;
+}
+
+.handle {
+  font-weight: bold;
+}
+
+.tagline {
+  color: rgb(85, 85, 85);
 }
