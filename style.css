@@ -18,7 +18,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 2fr;
   gap: 1rem;
-  margin: 1rem 1.75rem .75rem ;
+  margin: 1rem 1.75rem 0.75rem;
   align-items: center;
 }
 
@@ -72,7 +72,7 @@ body {
 }
 
 .account-greeter p {
-  margin: .25rem;
+  margin: 0.25rem;
 }
 
 #static-greeting {
@@ -147,23 +147,61 @@ body {
   grid-column: 2;
   background-color: var(--light-grey-background);
   display: grid;
-  grid-template-columns: 1fr 400px;
+  grid-template-columns: 1fr 270px;
   grid-template-rows: 1fr 1fr;
   padding: 1rem 2rem 2rem;
+  font-size: 0.75rem;
+  --grey-text: rgb(85, 85, 85);
 }
 
-.section-header {
+.section-header > p {
   font-weight: bold;
+  font-size: 1rem;
+  padding-bottom: 1rem;
 }
 
 #projects {
   grid-row: 1 / -1;
 }
 
-#trending-container {
+#trending-container,
+#announcements-container {
   background: white;
-  padding: 1.5rem;
+  padding: 1em;
   border-radius: 10px;
+}
+
+#announcements-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+}
+
+.announcement-header {
+  font-weight: bold;
+}
+
+.announcement-body {
+  font-weight: normal;
+  color: var(--grey-text);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+hr {
+  border: 0;
+  width: 100%;
+  margin: 1rem 0;
+  background-color: rgb(206, 205, 205);
+  height: 1px;
+}
+
+#announcements p,
+#trending p {
+  margin: 0;
 }
 
 .trending-person {
@@ -180,7 +218,7 @@ body {
 }
 
 .trending-person p {
-  margin: .25rem;
+  margin: 0.25rem;
 }
 
 .handle {
@@ -188,5 +226,5 @@ body {
 }
 
 .tagline {
-  color: rgb(85, 85, 85);
+  color: var(--grey-text);
 }
