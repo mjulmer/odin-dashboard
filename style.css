@@ -170,6 +170,24 @@ body {
   gap: 1rem;
 }
 
+.card-container {
+  display: grid;
+  grid-template-columns: 5px 1fr;
+  grid-template-rows: 1fr 30px;
+  gap: 1rem;
+  border-radius: 5px;
+  background-color: white;
+  width: 20rem;
+  height: 10rem;
+  /* Clips the corners of the orange bar to match the background. */
+  overflow: clip;
+}
+
+.orange-bar {
+  background-color: #fcba03;
+  grid-row: 1 / -1;
+}
+
 #trending-container,
 #announcements-container {
   background: white;
@@ -202,7 +220,7 @@ hr {
   width: 100%;
   margin: 1rem 0;
   background-color: rgb(206, 205, 205);
-  height: 1px;
+  height: 1px;icon2.style.fill = "blue !important";
 }
 
 #announcements p,

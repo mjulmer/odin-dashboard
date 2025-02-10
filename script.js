@@ -17,21 +17,10 @@ function createNewCard(heading, body) {
   icon3.src = "icons/source-fork.svg";
 
   const cardContainer = document.createElement("div");
-  cardContainer.style.display = "grid";
-  cardContainer.style.gridTemplateColumns = "5px 1fr";
-  cardContainer.style.gridTemplateRows = "1fr 30px";
-  cardContainer.style.gap = "1rem";
-  cardContainer.style.borderRadius = "5px";
-  cardContainer.style.backgroundColor = "white";
-  cardContainer.style.width = "20rem";
-  cardContainer.style.height = "10rem";
-  // Clips the corners of the orange bar to match the background.
-  cardContainer.style.overflow = "clip";
+  cardContainer.className = "card-container";
 
   const orangeBar = document.createElement("div");
-  orangeBar.style.backgroundColor = "#fcba03";
-  orangeBar.style.gridRow = "1 / -1";
-  orangeBar.style.column = "1";
+  orangeBar.className = "orange-bar";
 
   const textContent = document.createElement("div");
   textContent.appendChild(cardHeading);
@@ -89,3 +78,4 @@ projectsContainer.appendChild(
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla laudantium atque nobis cumque doloremque, a ipsa incidunt natus tempore sint quas vel omnis, porro soluta reprehenderit similique impedit alias aut."
   )
 );
+icon2.style.fill = "blue !important";
