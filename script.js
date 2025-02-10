@@ -4,9 +4,11 @@ const projectsContainer = document.querySelector("#project-cards");
 
 function createNewCard(heading, body) {
   const cardHeading = document.createElement("p");
+  cardHeading.className = "card-heading";
   cardHeading.textContent = heading;
 
   const cardBody = document.createElement("p");
+  cardBody.className = "card-body";
   cardBody.textContent = body;
 
   const icon1 = document.createElement("img");
@@ -27,11 +29,10 @@ function createNewCard(heading, body) {
   textContent.appendChild(cardBody);
 
   const icons = document.createElement("div");
+  icons.className = "icons-container";
   icons.appendChild(icon1);
   icons.appendChild(icon2);
   icons.appendChild(icon3);
-  icons.style.display = "flex";
-  icons.style.justifyContent = "right";
 
   cardContainer.appendChild(orangeBar);
   cardContainer.appendChild(textContent);

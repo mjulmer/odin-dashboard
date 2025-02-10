@@ -151,7 +151,7 @@ body {
   grid-template-rows: 1fr 1fr;
   padding: 1rem 2rem 2rem;
   font-size: 0.75rem;
-  --grey-text: rgb(85, 85, 85);
+  --grey-text: rgb(107, 107, 107);
 }
 
 .section-header > p {
@@ -173,19 +173,46 @@ body {
 .card-container {
   display: grid;
   grid-template-columns: 5px 1fr;
-  grid-template-rows: 1fr 30px;
+  grid-template-rows: 1fr 2.8rem;
   gap: 1rem;
   border-radius: 5px;
   background-color: white;
   width: 20rem;
-  height: 10rem;
+  height: 12rem;
   /* Clips the corners of the orange bar to match the background. */
   overflow: clip;
+}
+
+.card-heading {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.card-body {
+  margin: 0;
+  font-size: .9rem;
+  color: var(--grey-text);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 
 .orange-bar {
   background-color: #fcba03;
   grid-row: 1 / -1;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: right;
+  gap: 1.4rem;
+  margin-right: 1.4rem;
+  height: 1.4rem;
+  padding-bottom: 1.5rem;
 }
 
 #trending-container,
