@@ -4,7 +4,7 @@ body {
   height: 100vh;
   grid-template-columns: clamp(100px, 20vw, 300px) 1fr;
   grid-template-rows: min-content 1fr;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   --light-grey-background: rgb(227, 232, 238);
   --shadow-color: rgb(196, 195, 195);
