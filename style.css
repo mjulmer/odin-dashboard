@@ -7,6 +7,7 @@ body {
   font-family: sans-serif;
   font-size: 1.25rem;
   --light-grey-background: rgb(227, 232, 238);
+  --shadow-color: rgb(196, 195, 195);
   --blue-background: rgb(14, 157, 224);
 }
 
@@ -18,8 +19,11 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 2fr;
   gap: 1rem;
-  margin: 1rem 1.75rem 0.75rem;
+  padding: 1rem 1.75rem 0.75rem;
+  /* margin: 1rem 1.75rem 0.75rem; */
   align-items: center;
+  box-shadow: 0px 2px 8px var(--shadow-color);
+  z-index: 2;
 }
 
 .search-and-nav form {
@@ -102,6 +106,7 @@ body {
   grid-row: 1 / -1;
   background-color: var(--blue-background);
   color: white;
+  z-index: 3;
 }
 
 .sidebar .logo {
@@ -181,6 +186,7 @@ body {
   height: 12rem;
   /* Clips the corners of the orange bar to match the background. */
   overflow: clip;
+  box-shadow: 0px 2px 8px var(--shadow-color);
 }
 
 .card-heading {
@@ -192,7 +198,7 @@ body {
 
 .card-body {
   margin: 0;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: var(--grey-text);
   overflow: hidden;
   display: -webkit-box;
@@ -220,6 +226,7 @@ body {
   background: white;
   padding: 1em;
   border-radius: 10px;
+  box-shadow: 0px 2px 8px var(--shadow-color);
 }
 
 #announcements-container {
@@ -247,7 +254,7 @@ hr {
   width: 100%;
   margin: 1rem 0;
   background-color: rgb(206, 205, 205);
-  height: 1px;icon2.style.fill = "blue !important";
+  height: 1px;
 }
 
 #announcements p,
